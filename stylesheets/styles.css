@@ -30,6 +30,7 @@
   font-family: 'Noto Sans';
   font-weight: 400;
   font-style: italic;
+
   src: url('../fonts/Noto-Sans-italic/Noto-Sans-italic.eot');
   src: url('../fonts/Noto-Sans-italic/Noto-Sans-italic.eot?#iefix') format('embedded-opentype'),
        local('Noto Sans Italic'),
@@ -57,6 +58,7 @@
 body {
   background-color: #fff;
   padding:50px;
+  width:90%;
   font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#727272;
   font-weight:400;
