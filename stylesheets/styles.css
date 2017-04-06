@@ -232,6 +232,10 @@ section {
   padding-bottom:50px;
 }
 
+span.strong {
+                border-bottom: 3px solid grey;
+            }
+
 small {
   font-size:11px;
 }
