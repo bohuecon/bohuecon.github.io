@@ -58,16 +58,16 @@
 body {
   background-color: #fff;
   padding:50px;
-  /*width:100%;*/
-  margin: 10px 40px;
-  font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color:#727272;
+  /*width:100%;
+  margin: 10px 40px;*/
+  font: 16px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color:#474747;
   font-weight:400;
 }
 
 h1, h2, h3, h4, h5, h6 {
   color:#222;
-  margin:0 0 20px;
+  margin:25px 0 20px;
 }
 
 p, ul, ol, table, pre, dl {
@@ -111,7 +111,7 @@ a:hover small {
 }
 
 .wrapper {
-  width:960px;
+  width:80%;
   margin:0 auto;
 }
 
@@ -227,7 +227,7 @@ header ul a strong {
 }
 
 section {
-  width:500px;
+  width:70%;
   float:right;
   padding-bottom:50px;
 }
