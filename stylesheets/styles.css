@@ -56,9 +56,11 @@
 }
 
 body {
-  background-color: #fff;
+  background-color: #F8F8F5; 
   padding:50px;
-  /*width:100%;
+  /*
+  background-color: #fff;
+  width:100%;
   margin: 10px 40px;*/
   font: 16px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#474747;
