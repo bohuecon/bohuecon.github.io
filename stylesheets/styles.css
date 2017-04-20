@@ -56,14 +56,15 @@
 }
 
 body {
-  background-color: #F8F8F5; 
+  background-color: #fefefe; 
   padding:50px;
   /*
   background-color: #fff;
   width:100%;
   margin: 10px 40px;*/
   font: 16px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color:#474747;
+  color: #000000;
+  /*color:#474747;*/
   font-weight:400;
 }
 
