@@ -1,12 +1,17 @@
+.strong {
+  font-weight:bold;
+}
 body {
-	font-family: 'Rubik', 'Sorts Mill Goudy', Times, 'Times New Roman', serif;
+	font-family: 'Open Sans', sans-serif;
 	background: rgb(244, 244, 244);
 	margin: 0px auto;
 	line-height: 18px;
+/*	transform: scale(1.1);*/
+/*	transform-origin: 0 0;*/
 }
 a {
 	color: rgb(0, 0, 0);
-	text-decoration: none;
+	text-decoration: underline;
 }
 a:hover {
 	color: rgb(133, 133, 133);
@@ -83,11 +88,11 @@ a:hover {
 	float: left;
 }
 .infoSectionFull p {
-	line-height: 20px;
+	line-height: 22px;
 	font-size: 16px;
 }
 .infoSectionFull p a {
-	text-decoration: none;
+	text-decoration: underline;
 }
 .infoSectionFull strong {
 	font-weight: bold;
@@ -124,10 +129,14 @@ a:hover {
 	clear: both;
 }
 #websiteFooter {
+/*	position:absolute;
+    bottom: 0;*/
 	margin: 40px auto;
+	 /*width:100%;*/
 	width: 960px;
 	clear: both;
 }
+
 #copyNotice {
 	width: 164px;
 	float: left;
@@ -159,8 +168,9 @@ a:hover {
 }
 h1 {
 	font-size: 16px;
+	line-height: 22px;
 	font-style: normal;
-	font-weight: 500;
+	font-weight: 550;
 	margin-bottom: 36px;
 }
 h2 {
@@ -186,12 +196,13 @@ h4 {
 	margin-bottom: 12px;
 }
 p {
-	line-height: 24px;
+	line-height: 20px;
 	font-size: 18px;
 	margin-bottom: 24px;
 }
 p a {
-	font-style: italic;
+	/*font-style: bold;*/
+	/*font-weight: bold;*/
 	text-decoration: underline;
 }
 em {
@@ -228,7 +239,7 @@ button {
 	font-weight: bold;
 }
 .commentAuthor a {
-	font-style: italic;
+	/*font-style: italic;*/
 }
 .menuItem {
 	text-transform: uppercase;
@@ -238,7 +249,7 @@ button {
 }
 #contactLink {
 	text-transform: none;
-	font-style: italic;
+	/*font-style: bold;*/
 	font-weight: normal;
 }
 #workHeader p {
@@ -270,12 +281,14 @@ aside.postMeta {
 	font-weight: bold;
 }
 #websiteFooter {
-	font-size: 12px;
+	font-size: 14px;
 	margin-bottom: 36px;
 }
 #websiteFooter a {
-	font-size: 12px;
-	font-style: italic;
+	font-size: 14px;
+	font-style: normal;
+	text-decoration: none;
+	/*font-weight: bold;*/
 }
 #belowFooter {
 	height: 30px;
