@@ -1,5 +1,5 @@
 body {
-	font-family: 'Sorts Mill Goudy', Times, 'Times New Roman', serif;
+	font-family: 'Rubik', 'Sorts Mill Goudy', Times, 'Times New Roman', serif;
 	background: rgb(244, 244, 244);
 	margin: 0px auto;
 	line-height: 18px;
@@ -26,7 +26,7 @@ a:hover {
 }
 #logo {
 	font-family: 'Lato', Arial, Helvetica, sans-serif;
-	font-size: 12px;
+	font-size: 20px;
 	width: 140px;
 	padding-top: 2px;
 	float: left;
@@ -68,7 +68,7 @@ a:hover {
 	position: relative;
 }
 .infoSection {
-	width: 304px;
+	width: 350px;
 	clear: left;
 	margin-bottom: 40px;
 	float: left;
@@ -77,14 +77,14 @@ a:hover {
 	font-weight: bold;
 }
 .infoSectionFull {
-	width: 608px;
+	width: 700px;
 	clear: left;
 	margin-bottom: 40px;
 	float: left;
 }
 .infoSectionFull p {
 	line-height: 20px;
-	font-size: 14px;
+	font-size: 16px;
 }
 .infoSectionFull p a {
 	text-decoration: none;
@@ -158,7 +158,7 @@ a:hover {
 	display: block;
 }
 h1 {
-	font-size: 15px;
+	font-size: 16px;
 	font-style: normal;
 	font-weight: 500;
 	margin-bottom: 36px;
