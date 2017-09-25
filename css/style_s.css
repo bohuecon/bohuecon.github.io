@@ -1,0 +1,163 @@
+@media only screen and (max-width:480px) {
+#siteMasthead {
+	background: rgb(255, 255, 255);
+	position: relative;
+}
+#siteMastheadWrap {
+	margin: 0px auto;
+	width: 100%;
+}
+#siteNav {
+	margin: 0px;
+	width: 100%;
+	height: auto;
+	clear: both;
+}
+.menuItem {
+	padding: 0px;
+	width: 100%;
+	margin-right: 0px;
+	float: none;
+}
+.menuItem a {
+	margin: 0px;
+	padding: 6px 0px;
+	width: 100%;
+	text-align: center;
+	border-bottom-color: rgb(204, 204, 204);
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	display: block;
+}
+.menuItem a:hover {
+	background: none;
+}
+.menuItem a:active {
+	background: rgb(238, 238, 238);
+}
+#logo {
+	padding: 12px 5% 24px;
+	width: 90%;
+	text-align: center;
+	display: block;
+}
+#content {
+	margin: 0px;
+	padding: 0px 5%;
+	width: 90%;
+}
+#infoContent {
+	margin: 24px 0px;
+	padding: 12px 5% 24px;
+	border: 0px currentColor;
+	border-image: none;
+	width: 90%;
+}
+.infoSection {
+	width: 100%;
+	margin-bottom: 24px;
+	float: none;
+}
+.infoSectionFull {
+	width: 304px;
+}
+#pictureSection {
+	right: auto;
+	position: relative;
+}
+#pagination {
+	padding: 12px 0px;
+	border: 0px currentColor;
+	border-image: none;
+	width: 100%;
+	text-align: center;
+	margin-left: 0px;
+}
+#sideBar {
+	display: none;
+}
+#commentFormLink {
+	margin-left: 0px;
+}
+#comments {
+	padding: 0px;
+	border: 0px currentColor;
+	border-image: none;
+	width: 100%;
+	clear: none;
+	margin-left: 0px;
+	float: left;
+}
+aside.commentAuthor {
+	width: 140px;
+	padding-top: 24px;
+	float: none;
+	display: block;
+}
+div.commentContent {
+	margin: 12px 0px;
+	width: 100%;
+	padding-right: 0px;
+}
+#commentForm input {
+	padding: 6px 5%;
+	border-radius: 0px;
+	width: 90%;
+}
+#commentForm input:focus {
+	padding: 6px 5%;
+	border-radius: 0px;
+	width: 90%;
+}
+#commentForm textarea {
+	padding: 12px 5%;
+	border-radius: 0px;
+	width: 90%;
+}
+#commentForm textarea:focus {
+	padding: 12px 5%;
+	border-radius: 0px;
+	width: 90%;
+}
+#commentForm input#submit {
+	border-radius: 0px;
+}
+#websiteFooter {
+	margin: 12px auto;
+	padding: 12px 5% 0px;
+	width: 80%;
+	text-align: center;
+	border-top-color: rgb(255, 255, 255);
+	border-top-width: 1px;
+	border-top-style: solid;
+}
+#websiteFooter div {
+	width: 100%;
+	margin-bottom: 12px;
+	float: none;
+}
+#footerSocial a span {
+	display: block;
+}
+#footerSocial a:hover span {
+	display: block;
+}
+#footerSocial a:hover em {
+	display: block;
+}
+#contactLink {
+	display: none;
+}
+#footerTagline {
+	display: none;
+}
+.slides_tabs {
+	display: none;
+}
+#links {
+	display: none;
+}
+#jobs {
+	display: none;
+}
+}
