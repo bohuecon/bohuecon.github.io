@@ -2,32 +2,40 @@
   font-weight:bold;
 }
 body {
-	font-family: 'Open Sans', sans-serif;
-	background: rgb(244, 244, 244);
+	/*font-family: 'Open Sans', sans-serif;*/
+	/*font-family: 'Roboto Mono', monospace;*/
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	/*font-family: 'Montserrat', sans-serif;*/
+	background: rgb(255, 255, 255);
 	margin: 0px auto;
-	line-height: 20px;
+	line-height: 22px;
 /*	transform: scale(1.1);*/
 /*	transform-origin: 0 0;*/
 }
 a {
-	color: rgb(0, 0, 0);
-	text-decoration: underline;
+	/*color: rgb(0, 0, 0);*/
+	color: rgb(128, 0, 0);
+	/*text-decoration: underline;*/
 }
 a:hover {
-	color: rgb(133, 133, 133);
-	text-decoration: underline;
+	/*color: rgb(133, 133, 133);*/
+	color: rgb(230, 0, 0);
+	/*text-decoration: underline;*/
 }
 #siteMasthead {
 	top: 0px;
+	/*bottom: 20px;*/
 	width: 100%;
 	position: fixed;
 	z-index: 10;
-	background: rgb(255, 255, 255);
-	box-shadow: 0px -2px 6px 0px #000;
+	/*background: rgb(255, 0, 0)*/
+	/*box-shadow: 0px -2px 6px 0px #000;*/
 }
 #siteMastheadWrap {
-	margin: 24px auto 12px;
+	margin: 0px auto 20px;
 	width: 960px;
+	background: rgb(255, 255, 255)
 }
 #logo {
 	font-family: 'Lato', Arial, Helvetica, sans-serif;
@@ -38,14 +46,14 @@ a:hover {
 	letter-spacing: 1px;
 }
 #siteNav {
-	margin: 0px 0px 0px 140px;
+	margin: 200px 0px 0px 140px;
 	width: 808px;
 	height: 48px;
-	padding-left: 0px;
+	padding-left: 12px;
 	clear: left;
 }
 .menuItem {
-	padding: 0px 12px;
+	padding: 0px 15px;
 	margin-right: 5px;
 	float: left;
 }
@@ -65,17 +73,19 @@ a:hover {
 	border-width: 0px 0px 1px;
 	border-style: solid;
 	border-color: rgb(255, 255, 255);
-	margin: 120px auto 0px;
+	margin: 120px auto 10px;
+	/*margin-bottom: 10px;*/
 	padding: 24px 24px 47px;
 	border-image: none;
-	width: 632px;
+	width: 650px;
 	clear: both;
 	position: relative;
 }
 .infoSection {
-	width: 400px;
+	width: 500px;
 	clear: left;
-	margin-bottom: 40px;
+	margin-top: 20px;
+	margin-bottom: 10px;
 	float: left;
 }
 .infoSection strong {
@@ -92,10 +102,11 @@ a:hover {
 	font-size: 17px;
 }
 .infoSectionFull p a {
-	text-decoration: underline;
+	/*text-decoration: underline;*/
 }
 .infoSectionFull strong {
-	font-weight: bold;
+	/*font-weight: bold;*/
+	font-size: 20px;
 }
 .infoList li {
 	padding-right: 6px;
@@ -103,6 +114,7 @@ a:hover {
 }
 #pictureSection {
 	right: 0px;
+	margin-top: 80px;
 	position: absolute;
 }
 #pagination {
@@ -167,7 +179,7 @@ a:hover {
 	display: block;
 }
 h1 {
-	font-size: 16px;
+	font-size: 17px;
 	line-height: 22px;
 	font-style: normal;
 	font-weight: 550;
@@ -203,7 +215,7 @@ p {
 p a {
 	/*font-style: bold;*/
 	/*font-weight: bold;*/
-	text-decoration: underline;
+	/*text-decoration: underline;*/
 }
 em {
 	font-style: italic;
@@ -216,7 +228,7 @@ button {
 	font-size: 16px;
 }
 .infoList li a {
-	text-decoration: underline;
+	/*text-decoration: underline;*/
 }
 #sideBar ul a {
 	line-height: 18px;
@@ -243,8 +255,8 @@ button {
 }
 .menuItem {
 	text-transform: uppercase;
-	line-height: 16px;
-	font-size: 14px;
+	line-height: 18px;
+	font-size: 16px;
 	font-weight: normal;
 }
 #contactLink {
