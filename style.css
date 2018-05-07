@@ -1,0 +1,355 @@
+.strong {
+  font-weight:bold;
+}
+body {
+	/*font-family: 'Open Sans', sans-serif;*/
+	/*font-family: 'Roboto Mono', monospace;*/
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	/*font-family: 'Montserrat', sans-serif;*/
+	background: rgb(255, 255, 255);
+	margin: 0px auto;
+	line-height: 22px;
+/*	transform: scale(1.1);*/
+/*	transform-origin: 0 0;*/
+}
+a {
+	/*color: rgb(0, 0, 0);*/
+	color: rgb(128, 0, 0);
+	/*text-decoration: underline;*/
+}
+a:hover {
+	/*color: rgb(133, 133, 133);*/
+	color: rgb(230, 0, 0);
+	/*text-decoration: underline;*/
+}
+#siteMasthead {
+	top: 0px;
+	/*bottom: 20px;*/
+	width: 100%;
+	position: fixed;
+	z-index: 10;
+	/*background: rgb(255, 0, 0)*/
+	/*box-shadow: 0px -2px 6px 0px #000;*/
+	background: rgb(255, 255, 255)
+}
+#siteMastheadWrap {
+	margin: 0px auto 20px;
+	width: 960px;
+	background: rgb(255, 255, 255)
+}
+#logo {
+	font-family: 'Lato', Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	width: 140px;
+	padding-top: 2px;
+	float: left;
+	letter-spacing: 1px;
+}
+#siteNav {
+	margin: 30px 0px 0px 140px;
+	width: 808px;
+	height: 48px;
+	padding-left: 12px;
+	clear: right;
+}
+.menuItem {
+	padding: 0px 15px;
+	margin-right: 5px;
+	float: left;
+}
+.menuItem a {
+	padding: 12px 12px 8px;
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+	display: block;
+}
+.menuItem a:hover {
+	/*background: rgb(244, 244, 244);*/
+	background: rgb(255, 216, 216);
+	transition: 0.2s;
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s;
+}
+#infoContent {
+	border-width: 0px 0px 1px;
+	border-style: solid;
+	border-color: rgb(255, 255, 255);
+	margin: 120px auto 10px;
+	/*margin-bottom: 10px;*/
+	padding: 24px 24px 47px;
+	border-image: none;
+	width: 650px;
+	clear: both;
+	position: relative;
+}
+.infoSection {
+	width: 500px;
+	clear: left;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	float: left;
+}
+.infoSection strong {
+	font-weight: bold;
+}
+.infoSectionFull {
+	width: 700px;
+	clear: left;
+	margin-bottom: 40px;
+	float: left;
+}
+.infoSectionFull p {
+	line-height: 24px;
+	font-size: 17px;
+}
+.infoSectionFull p a {
+	/*text-decoration: underline;*/
+}
+.infoSectionFull strong {
+	/*font-weight: bold;*/
+	font-size: 20px;
+}
+.infoList li {
+	padding-right: 6px;
+	display: inline;
+}
+#pictureSection {
+	right: 0px;
+	margin-top: 80px;
+	position: absolute;
+}
+#pagination {
+	border-width: 1px 0px;
+	border-style: solid;
+	border-color: rgb(255, 255, 255);
+	padding: 47px 24px 47px 0px;
+	border-image: none;
+	width: 632px;
+	margin-left: 164px;
+	float: left;
+}
+#sideBar {
+	width: 222px;
+	padding-top: 24px;
+	float: left;
+}
+#sideBar ul {
+	margin: 24px 0px;
+}
+#content {
+	margin: 0px auto;
+	width: 960px;
+	clear: both;
+}
+#websiteFooter {
+/*	position:absolute;
+    bottom: 0;*/
+	margin: 40px auto;
+	 /*width:100%;*/
+	width: 960px;
+	clear: both;
+}
+
+#copyNotice {
+	width: 164px;
+	float: left;
+}
+#footerAddress {
+	width: 328px;
+	float: left;
+}
+#footerContact {
+	width: 164px;
+	float: left;
+}
+#footerSocial a span {
+	display: none;
+}
+#footerSocial a:hover span {
+	display: block;
+}
+#footerSocial a:hover em {
+	display: none;
+}
+#dot {
+	background: rgb(204, 204, 204);
+	border-radius: 50%;
+	width: 12px;
+	height: 12px;
+	float: right;
+	display: block;
+}
+h1 {
+	font-size: 17px;
+	line-height: 22px;
+	font-style: normal;
+	font-weight: 550;
+	margin-bottom: 36px;
+}
+h2 {
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 500;
+	margin-bottom: 36px;
+}
+h3 {
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 500;
+	margin-bottom: 36px;
+}
+.blogPost h3 {
+	font-size: 12px;
+	margin-bottom: 24px;
+}
+h4 {
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 500;
+	margin-bottom: 12px;
+}
+p {
+	line-height: 20px;
+	font-size: 18px;
+	margin-bottom: 24px;
+}
+p a {
+	/*font-style: bold;*/
+	/*font-weight: bold;*/
+	/*text-decoration: underline;*/
+}
+em {
+	font-style: italic;
+}
+button {
+	font-size: 12px;
+}
+.infoList li {
+	line-height: 18px;
+	font-size: 16px;
+}
+.infoList li a {
+	/*text-decoration: underline;*/
+}
+#sideBar ul a {
+	line-height: 18px;
+	font-size: 16px;
+	font-style: italic;
+}
+.commentList {
+	line-height: 15px;
+	font-size: 12px;
+}
+.commentList li {
+	line-height: 15px;
+	font-size: 12px;
+}
+.commentList p {
+	line-height: 15px;
+	font-size: 12px;
+}
+.commentAuthor strong {
+	font-weight: bold;
+}
+.commentAuthor a {
+	/*font-style: italic;*/
+}
+.menuItem {
+	text-transform: uppercase;
+	line-height: 18px;
+	font-size: 16px;
+	font-weight: normal;
+}
+#contactLink {
+	text-transform: none;
+	/*font-style: bold;*/
+	font-weight: normal;
+}
+#workHeader p {
+	line-height: 30px;
+	font-size: 25px;
+}
+#infoHeader p {
+	line-height: 30px;
+	font-size: 25px;
+}
+#projectNavigation a {
+	text-align: right;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 500;
+}
+.postHeader h2 {
+	line-height: 30px;
+	font-size: 25px;
+	font-weight: normal;
+}
+.postHeader a {
+	font-size: 12px;
+}
+aside.postMeta {
+	font-size: 12px;
+}
+.postMeta .date {
+	font-weight: bold;
+}
+#websiteFooter {
+	font-size: 14px;
+	margin-bottom: 36px;
+}
+#websiteFooter a {
+	font-size: 14px;
+	font-style: normal;
+	text-decoration: none;
+	/*font-weight: bold;*/
+}
+#belowFooter {
+	height: 30px;
+	display: block;
+}
+.clear {
+	clear: both;
+}
+.isotope {
+	transition-duration: 0.8s;
+	-webkit-transition-duration: 0.8s;
+	-moz-transition-duration: 0.8s;
+	-o-transition-duration: 0.8s;
+}
+.isotope .isotope-item {
+	transition-duration: 0.8s;
+	-webkit-transition-duration: 0.8s;
+	-moz-transition-duration: 0.8s;
+	-o-transition-duration: 0.8s;
+}
+.isotope {
+	transition-property: height, width;
+	-webkit-transition-property: height, width;
+	-moz-transition-property: height, width;
+	-o-transition-property: height, width;
+}
+.isotope .isotope-item {
+	transition-property: transform, opacity;
+	-webkit-transition-property: -webkit-transform, opacity;
+	-moz-transition-property: -moz-transform, opacity;
+	-o-transition-property: top, left, opacity;
+}
+.no-transition.isotope {
+	transition-duration: 0s;
+	-webkit-transition-duration: 0s;
+	-moz-transition-duration: 0s;
+	-o-transition-duration: 0s;
+}
+.no-transition.isotope .isotope-item {
+	transition-duration: 0s;
+	-webkit-transition-duration: 0s;
+	-moz-transition-duration: 0s;
+	-o-transition-duration: 0s;
+}
+.isotope .no-transition.isotope-item {
+	transition-duration: 0s;
+	-webkit-transition-duration: 0s;
+	-moz-transition-duration: 0s;
+	-o-transition-duration: 0s;
+}
