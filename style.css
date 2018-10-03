@@ -1,5 +1,6 @@
 .strong {
-  font-weight:bold;
+  /*font-weight:bold;*/
+  color: rgb(128, 0, 0);
 }
 body {
 	/*font-family: 'Open Sans', sans-serif;*/
