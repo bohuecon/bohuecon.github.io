@@ -86,7 +86,7 @@ a:hover {
 	width: 500px;
 	clear: left;
 	margin-top: 20px;
-	margin-bottom: 10px;
+	margin-bottom: 0px;
 	float: left;
 }
 .infoSection strong {
@@ -180,11 +180,13 @@ a:hover {
 	display: block;
 }
 h1 {
-	font-size: 17px;
-	line-height: 22px;
+	font-size: 25px;
+	line-height: 25px;
 	font-style: normal;
-	font-weight: 550;
-	margin-bottom: 36px;
+	font-weight: normal;
+	/*font-weight: 550;*/
+	margin-bottom: 12px;
+	margin-top: 12px;
 }
 h2 {
 	font-size: 15px;
@@ -270,9 +272,11 @@ button {
 	font-size: 25px;
 }
 #infoHeader p {
-	line-height: 30px;
-	font-size: 25px;
+	line-height: 24px;
+	font-size: 17px;
+	margin-bottom: 0px;
 }
+
 #projectNavigation a {
 	text-align: right;
 	font-size: 12px;

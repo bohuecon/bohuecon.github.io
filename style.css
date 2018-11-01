@@ -1,6 +1,5 @@
 .strong {
-  /*font-weight:bold;*/
-  color: rgb(128, 0, 0);
+  font-weight:bold;
 }
 body {
 	/*font-family: 'Open Sans', sans-serif;*/
@@ -66,8 +65,7 @@ a:hover {
 	display: block;
 }
 .menuItem a:hover {
-	/*background: rgb(244, 244, 244);*/
-	background: rgb(255, 216, 216);
+	background: rgb(244, 244, 244);
 	transition: 0.2s;
 	-webkit-transition: all 0.2s linear;
 	-moz-transition: all 0.2s;
