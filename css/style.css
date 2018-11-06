@@ -1,5 +1,5 @@
 .strong {
-  font-weight:bold;
+  color: rgb(128, 0, 0);
 }
 body {
 	/*font-family: 'Open Sans', sans-serif;*/
@@ -357,3 +357,12 @@ aside.postMeta {
 	-moz-transition-duration: 0s;
 	-o-transition-duration: 0s;
 }
+
+/* LIST #2 */
+#list2 { width:800px; }
+#list2 ol { font-family:'Open Sans', sans-serif; font-size:18px; color:#020202;  }
+#list2 ol { font-size:24px; color:#020202;  }
+#list2 ol li { }
+/*#list2 ol li p { padding:8px; font-style:normal; font-family:'Open Sans', sans-serif; font-size:18px; color:#020202; border-left: 1px solid #999; }*/
+#list2 ol li p { padding:8px; font-style:normal; font-family:'Open Sans', sans-serif; font-size:18px; color:#020202; border-left: 2px solid rgb(200, 149, 149); }
+#list2 ol li p span { display:block; }
