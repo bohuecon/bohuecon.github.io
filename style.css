@@ -35,7 +35,7 @@ a:hover {
 }
 #siteMastheadWrap {
 	margin: 0px auto 20px;
-	width: 960px;
+	width: 600px;
 	background: rgb(255, 255, 255)
 }
 #logo {
@@ -78,12 +78,12 @@ a:hover {
 	/*margin-bottom: 10px;*/
 	padding: 24px 24px 47px;
 	border-image: none;
-	width: 650px;
+	width: 600px;
 	clear: both;
 	position: relative;
 }
 .infoSection {
-	width: 700px;
+	width: 600px;
 	clear: left;
 	margin-top: 20px;
 	margin-bottom: 10px;
@@ -93,7 +93,7 @@ a:hover {
 	font-weight: bold;
 }
 .infoSectionFull {
-	width: 700px;
+	width: 600px;
 	clear: left;
 	margin-bottom: 40px;
 	float: left;
@@ -124,7 +124,7 @@ a:hover {
 	border-color: rgb(255, 255, 255);
 	padding: 47px 24px 47px 0px;
 	border-image: none;
-	width: 632px;
+	width: 600;
 	margin-left: 164px;
 	float: left;
 }
@@ -138,7 +138,7 @@ a:hover {
 }
 #content {
 	margin: 0px auto;
-	width: 960px;
+	width: 600px;
 	clear: both;
 }
 #websiteFooter {
