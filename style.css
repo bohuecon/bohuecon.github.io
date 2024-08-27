@@ -9,7 +9,7 @@ body {
 	/*font-family: 'Montserrat', sans-serif;*/
 	background: rgb(255, 255, 255);
 	margin: 0px auto;
-	line-height: 22px;
+	line-height: 30px;
 /*	transform: scale(1.1);*/
 /*	transform-origin: 0 0;*/
 }
@@ -99,15 +99,15 @@ a:hover {
 	float: left;
 }
 .infoSectionFull p {
-	line-height: 24px;
+	line-height: 30px;
 	font-size: 17px;
 }
 .infoSectionFull p a {
 	/*text-decoration: underline;*/
 }
 .infoSectionFull strong {
-	/*font-weight: bold;*/
-	font-size: 20px;
+	font-weight: bold;
+	font-size: 15px;
 }
 .infoList li {
 	padding-right: 6px;
@@ -181,7 +181,7 @@ a:hover {
 }
 h1 {
 	font-size: 17px;
-	line-height: 22px;
+	line-height: 25px;
 	font-style: normal;
 	font-weight: 550;
 	margin-bottom: 36px;
@@ -209,7 +209,7 @@ h4 {
 	margin-bottom: 12px;
 }
 p {
-	line-height: 20px;
+	line-height: 25px;
 	font-size: 18px;
 	margin-bottom: 24px;
 }
