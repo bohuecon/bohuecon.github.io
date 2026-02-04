@@ -88,7 +88,7 @@ p {
 }
 
 .chinese-name {
-	font-family: "Songti SC", "SimSun", "STSong", serif;
+	font-family: "Heiti SC", "Source Han Sans SC", "Noto Sans CJK SC", system-ui, sans-serif;
 	margin-left: 6px;
 	font-weight: normal;
 	/* Visual balance */
