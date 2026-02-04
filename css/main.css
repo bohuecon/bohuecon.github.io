@@ -87,6 +87,13 @@ p {
 	margin-bottom: 1.25em;
 }
 
+.chinese-name {
+	font-family: "Songti SC", "SimSun", "STSong", serif;
+	margin-left: 6px;
+	font-weight: normal;
+	/* Visual balance */
+}
+
 /* ==========================================================================
    Layout
    ========================================================================== */
