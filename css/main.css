@@ -265,7 +265,8 @@ p {
    Content Sections
    ========================================================================== */
 .section {
-	padding: 60px 0;
+	padding-top: 60px;
+	padding-bottom: 60px;
 }
 
 .grid-2col {
