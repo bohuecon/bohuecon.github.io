@@ -54,14 +54,14 @@ h2 {
   font-family: var(--font-serif);
   font-size: 20px; /* text-xl */
   font-weight: 700; /* Bold as requested */
-  margin-top: 48px;
-  margin-bottom: 24px;
+  margin-top: 32px;
+  margin-bottom: 12px;
 }
 @media (min-width: 640px) {
   h2 {
     font-size: 24px; /* text-2xl */
-    margin-top: 64px;
-    margin-bottom: 32px;
+    margin-top: 40px;
+    margin-bottom: 16px;
   }
 }
 
@@ -110,6 +110,7 @@ a:hover {
 
 .profile-header {
   margin-bottom: 24px;
+  text-align: center;
 }
 .profile-name {
   font-family: var(--font-serif);
@@ -124,7 +125,7 @@ a:hover {
   }
 }
 .chinese-name {
-  font-family: "Songti SC", "Source Han Serif SC", "Noto Serif SC", Georgia, serif;
+  font-family: "Kaiti SC", "STKaiti", "KaiTi", "BiauKai", Georgia, serif;
   font-weight: 400;
   color: var(--text-main);
   opacity: 0.6;
@@ -163,6 +164,7 @@ a:hover {
   padding-top: 16px;
   font-family: var(--font-serif);
   font-size: 16px;
+  text-align: center;
 }
 .profile-nav a {
   text-decoration: none;
@@ -171,6 +173,32 @@ a:hover {
   text-decoration: underline;
   text-underline-offset: 4px;
   text-decoration-thickness: 1px;
+}
+
+.research-interests-text {
+  font-family: var(--font-serif);
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+#research-interests h2 {
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+@media (min-width: 640px) {
+  #research-interests h2 {
+    margin-top: 32px;
+    margin-bottom: 12px;
+  }
+}
+
+#publications h2 {
+  margin-top: 36px;
+}
+@media (min-width: 640px) {
+  #publications h2 {
+    margin-top: 48px;
+  }
 }
 
 /* ==========================================================================
