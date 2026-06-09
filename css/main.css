@@ -1,351 +1,322 @@
 /* ==========================================================================
-   Design System: Academic Minimalist (Inspired by Harvard/Martin Nowak)
+   Dante Astro Theme Design System (Compact Academic Version)
    ========================================================================== */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
 
 :root {
-	/* Brand Colors */
-	--color-brand-primary: #205B92;
-	/* Harvard Blue-ish */
-	--color-brand-dark: #000000;
-
-	/* UI Colors */
-	--color-bg-body: #FFFFFF;
-	--color-bg-light: #F9F9F9;
-	--color-bg-overlay: rgba(29, 33, 36, 0.70);
-
-	/* Text Colors */
-	--color-text-primary: #1D1D1D;
-	--color-text-secondary: #555555;
-	--color-text-light: #FFFFFF;
-
-	/* Typography */
-	--font-primary: 'Inter', sans-serif;
-
-	/* Layout */
-	--width-container: 1170px;
-	--header-height: 80px;
+  --text-main: #171717;
+  --bg-main: #f2f1ec;
+  --bg-muted: #eae9e1;
+  --border-main: #171717;
+  --font-serif: 'Newsreader', Georgia, serif;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
 }
 
-/* ==========================================================================
-   Base
-   ========================================================================== */
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-	margin: 0;
-	padding: 0;
-	background-color: var(--color-bg-body);
-	color: var(--color-text-primary);
-	font-family: var(--font-primary);
-	font-size: 17px;
-	line-height: 1.5;
-	-webkit-font-smoothing: antialiased;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding-bottom: 60px;
 }
 
-a {
-	color: var(--color-brand-primary);
-	text-decoration: none;
-	transition: color 0.2s;
+/* ==========================================================================
+   Layout & Grid
+   ========================================================================== */
+.container {
+  width: 100%;
+  max-width: 840px; /* Wider column as requested */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media (min-width: 768px) {
+  .container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 }
 
-a:hover {
-	text-decoration: underline;
-	color: #143e66;
-}
-
-h1,
-h2,
-h3,
-h4 {
-	font-weight: 500;
-	color: var(--color-text-primary);
-	margin-top: 0;
-	margin-bottom: 1rem;
-	letter-spacing: -0.02em;
-}
-
-h1 {
-	font-size: 42px;
-	line-height: 1.2;
-}
-
+/* ==========================================================================
+   Typography & Links
+   ========================================================================== */
 h2 {
-	font-size: 32px;
-	margin-bottom: 20px;
-	padding-bottom: 12px;
-	border-bottom: 1px solid #eee;
+  font-family: var(--font-serif);
+  font-size: 20px; /* text-xl */
+  font-weight: 700; /* Bold as requested */
+  margin-top: 48px;
+  margin-bottom: 24px;
+}
+@media (min-width: 640px) {
+  h2 {
+    font-size: 24px; /* text-2xl */
+    margin-top: 64px;
+    margin-bottom: 32px;
+  }
 }
 
 h3 {
-	font-size: 24px;
+  font-family: var(--font-serif);
+  font-size: 20px; /* text-xl */
+  font-weight: 500;
+  line-height: 1.25;
+}
+@media (min-width: 640px) {
+  h3 {
+    font-size: 24px; /* text-2xl */
+  }
 }
 
-p {
-	margin-bottom: 1.25em;
+/* Link underline styles from Dante */
+a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  transition: all 0.15s cubic-bezier(.4, 0, .2, 1);
+}
+a:hover {
+  text-decoration-style: solid;
 }
 
+/* ==========================================================================
+   Compact Top Banner & Profile Header
+   ========================================================================== */
+.hero-banner-container {
+  width: 100%;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.hero-banner-img {
+  width: 100%;
+  height: auto;
+  max-height: 380px;
+  object-fit: cover;
+  display: block;
+}
+
+.profile-header {
+  margin-bottom: 24px;
+}
+.profile-name {
+  font-family: var(--font-serif);
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+@media (min-width: 640px) {
+  .profile-name {
+    font-size: 36px;
+  }
+}
 .chinese-name {
-	font-family: "Heiti SC", "Source Han Sans SC", "Noto Sans CJK SC", system-ui, sans-serif;
-	margin-left: 6px;
-	font-weight: normal;
-	/* Visual balance */
+  font-family: "Songti SC", "Source Han Serif SC", "Noto Serif SC", Georgia, serif;
+  font-weight: 400;
+  color: var(--text-main);
+  opacity: 0.6;
+  font-size: 0.8em;
+  margin-left: 8px;
+}
+.profile-info-line {
+  font-family: var(--font-serif);
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--text-main);
+  margin-bottom: 8px;
+}
+.profile-info-line strong {
+  font-weight: 500;
+  font-style: italic;
+}
+
+.profile-nav {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.bullet-sep {
+  margin-left: 8px;
+  margin-right: 8px;
+  color: var(--text-main);
+  opacity: 0.3;
+}
+
+/* Profile links row */
+.profile-nav {
+  margin-top: 16px;
+  margin-bottom: 32px;
+  border-top: 1px dashed var(--border-main);
+  padding-top: 16px;
+  font-family: var(--font-serif);
+  font-size: 16px;
+}
+.profile-nav a {
+  text-decoration: none;
+}
+.profile-nav a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
 }
 
 /* ==========================================================================
-   Layout
+   Compact Lists & Papers
    ========================================================================== */
-.container {
-	max-width: var(--width-container);
-	margin: 0 auto;
-	padding: 0 24px;
+.papers-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.paper-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 32px;
+  margin-bottom: 32px;
+  text-decoration: none;
+  color: inherit;
+}
+@media (min-width: 640px) {
+  .paper-item {
+    margin-bottom: 40px;
+  }
+}
+
+.paper-item-left {
+  flex-grow: 1;
+}
+
+.paper-item-title {
+  font-family: var(--font-serif);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.25;
+}
+@media (min-width: 640px) {
+  .paper-item-title {
+    font-size: 24px;
+  }
+}
+.paper-item-title a {
+  text-decoration: none;
+}
+.paper-item-title a:hover {
+  text-decoration: none;
+}
+
+.paper-item-meta {
+  margin-top: 4px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.pub-venue {
+  font-style: italic;
+}
+
+.paper-item-abstract {
+  margin-top: 8px;
+  font-size: 14px;
+  line-height: 1.6;
+  opacity: 0.7;
+}
+
+.paper-item-links {
+  margin-top: 12px;
+  display: flex;
+  gap: 16px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.paper-item-links a {
+  text-underline-offset: 3px;
+}
+
+/* Hover reveal interaction on the right */
+.paper-item-arrow {
+  display: none;
+}
+@media (min-width: 640px) {
+  .paper-item-arrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    flex-shrink: 0;
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 0.15s cubic-bezier(.4, 0, .2, 1);
+  }
+  .paper-item:hover .paper-item-arrow {
+    opacity: 1;
+  }
 }
 
 /* ==========================================================================
-   Global Header (University Bar)
+   Footer
    ========================================================================== */
-.global-header {
-	background-color: #000;
-	color: #fff;
-	padding: 10px 0;
-	font-size: 13px;
-	font-weight: 500;
-	text-transform: uppercase;
-	letter-spacing: 0.5px;
-}
-
-.global-header a {
-	color: #fff;
-	text-decoration: none;
-}
-
-/* ==========================================================================
-   Site Navigation
-   ========================================================================== */
-.site-header {
-	background-color: #fff;
-	border-bottom: 1px solid #eee;
-	padding: 0;
-	position: sticky;
-	top: 0;
-	z-index: 1000;
-}
-
-.site-header .container {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	height: var(--header-height);
-}
-
-.site-title {
-	font-size: 22px;
-	font-weight: 500;
-	color: #000;
-	letter-spacing: -0.02em;
-	text-decoration: none !important;
-}
-
-.nav-links {
-	list-style: none;
-	display: flex;
-	gap: 40px;
-	margin: 0;
-	padding: 0;
-}
-
-.nav-links a {
-	color: #666;
-	font-size: 15px;
-	font-weight: 400;
-	text-decoration: none;
-	transition: color 0.2s ease;
-}
-
-.nav-links a:hover,
-.nav-links a.active {
-	color: #000;
-	text-decoration: none;
-}
-
-/* ==========================================================================
-   Hero Section
-   ========================================================================== */
-
-
-/* Hero background will be set by JS */
-.hero {
-	position: relative;
-	width: 100%;
-	height: 500px;
-	background-color: transparent;
-	background-size: cover;
-	background-position: center 30%;
-	display: flex;
-	align-items: center;
-	overflow: hidden;
-}
-
-/* Optional: Slight slow zoom (Ken Burns) for the static image */
-@keyframes slowZoom {
-	0% {
-		transform: scale(1);
-	}
-
-	100% {
-		transform: scale(1.05);
-	}
-}
-
-.hero.animate-bg {
-	animation: slowZoom 20s ease-out forwards;
-}
-
-/* Ensure content stays on top of slides */
-/* Ensure content stays on top of slides */
-.hero .container {
-	position: relative;
-	z-index: 2;
-	display: flex;
-	justify-content: flex-end;
-	width: 100%;
-}
-
-.hero-overlay-box {
-	background-color: var(--color-bg-overlay);
-	color: #fff;
-	padding: 32px;
-	width: 80%;
-	max-width: 500px;
-	margin-left: auto;
-	margin-right: 0;
-}
-
-.hero h1 {
-	color: #fff;
-	font-size: 42px;
-	margin-bottom: 16px;
-}
-
-.hero p {
-	font-size: 16px;
-	color: rgba(255, 255, 255, 0.9);
-	margin-bottom: 16px;
-}
-
-.hero a {
-	color: #fff;
-	text-decoration: underline;
-}
-
-.hero-buttons {
-	margin-top: 24px;
-}
-
-.btn {
-	display: inline-block;
-	padding: 12px 28px;
-	background-color: var(--color-brand-primary);
-	color: #fff;
-	font-weight: 600;
-	border-radius: 3px;
-	text-decoration: none;
-	font-size: 15px;
-}
-
-.btn:hover {
-	background-color: #143e66;
-	text-decoration: none;
-	color: #fff;
-}
-
-/* ==========================================================================
-   Content Sections
-   ========================================================================== */
-.section {
-	padding-top: 60px;
-	padding-bottom: 60px;
-}
-
-.grid-2col {
-	display: grid;
-	grid-template-columns: 2fr 1fr;
-	gap: 40px;
-	align-items: start;
-}
-
-/* Profile Image in Content */
-.profile-image-container img {
-	width: 100%;
-	max-width: 300px;
-	border-radius: 4px;
-	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-}
-
-/* Publications List */
-.publication-item {
-	margin-bottom: 24px;
-}
-
-.publication-item h3 {
-	font-size: 18px;
-	font-weight: 700;
-	margin-bottom: 4px;
-	color: var(--color-text-primary);
-}
-
-.publication-meta {
-	font-size: 16px;
-	color: var(--color-text-secondary);
-	line-height: 1.6;
-}
-
-.publication-link {
-	display: inline-block;
-	margin-top: 8px;
-	font-size: 14px;
-	font-weight: 500;
-}
-
-/* Footer */
 .site-footer {
-	background-color: #EEEEEC;
-	padding: 40px 0;
-	margin-top: 60px;
-	color: #666;
-	font-size: 14px;
-	text-align: center;
+  margin-top: 48px;
+  padding-top: 32px;
+  border-top: 1px dashed var(--border-main);
+}
+@media (min-width: 640px) {
+  .site-footer {
+    margin-top: 72px;
+    padding-top: 48px;
+  }
 }
 
-/* Mobile */
-@media (max-width: 900px) {
-	.hero {
-		height: auto;
-		padding: 60px 0;
-	}
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+@media (min-width: 640px) {
+  .footer-bottom {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
 
-	.hero-overlay-box {
-		margin: 0 auto;
-		max-width: 100%;
-	}
+.footer-socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.footer-socials a {
+  font-size: 14px;
+  text-decoration: none;
+}
+.footer-socials a:hover {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
 
-	.grid-2col {
-		grid-template-columns: 1fr;
-		gap: 40px;
-	}
-
-	.profile-image-container {
-		order: -1;
-		/* Image first on mobile? Or text first? Let's keep Default text first. */
-		text-align: center;
-	}
-
-	.site-header .container {
-		flex-direction: column;
-		height: auto;
-		padding: 16px 24px;
-		gap: 16px;
-	}
+.footer-copy {
+  font-size: 14px;
+}
+.footer-copy a {
+  text-decoration: none;
+}
+.footer-copy a:hover {
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
