@@ -125,7 +125,7 @@ a:hover {
   }
 }
 .chinese-name {
-  font-family: "Kaiti SC", "STKaiti", "KaiTi", "BiauKai", Georgia, serif;
+  font-family: "Kaiti SC", "STKaiti", "KaiTi", "BiauKai", "楷体", "楷体_GB2312", "华文楷体", cursive, Georgia, serif;
   font-weight: 400;
   color: var(--text-main);
   opacity: 0.6;
@@ -133,7 +133,7 @@ a:hover {
   margin-left: 8px;
 }
 .chinese-kaiti {
-  font-family: "Kaiti SC", "STKaiti", "KaiTi", "BiauKai", Georgia, serif;
+  font-family: "Kaiti SC", "STKaiti", "KaiTi", "BiauKai", "楷体", "楷体_GB2312", "华文楷体", cursive, Georgia, serif;
   font-weight: 400;
   opacity: 0.8;
   font-size: 0.85em;
