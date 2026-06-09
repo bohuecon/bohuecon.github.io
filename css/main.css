@@ -132,6 +132,13 @@ a:hover {
   font-size: 0.8em;
   margin-left: 8px;
 }
+.chinese-kaiti {
+  font-family: "Kaiti SC", "STKaiti", "KaiTi", "BiauKai", Georgia, serif;
+  font-weight: 400;
+  opacity: 0.8;
+  font-size: 0.85em;
+  margin-left: 6px;
+}
 .profile-info-line {
   font-family: var(--font-serif);
   font-size: 17px;
