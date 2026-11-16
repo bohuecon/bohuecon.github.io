@@ -410,6 +410,7 @@ html {
   display: flex;
   flex-direction: column;
   gap: 4px;
+  padding: 2px 12px;
 }
 @media (min-width: 640px) {
   .schedule-row {
