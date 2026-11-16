@@ -355,3 +355,138 @@ a:hover {
   text-decoration: underline;
   text-underline-offset: 2px;
 }
+
+/* ==========================================================================
+   Workshop Program & Schedule
+   ========================================================================== */
+html {
+  scroll-behavior: smooth;
+}
+
+.session-block {
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+
+.session-header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-bottom: 10px;
+  margin-bottom: 16px;
+  border-bottom: 1px dashed var(--border-main);
+}
+@media (min-width: 640px) {
+  .session-header {
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}
+
+.session-title {
+  font-family: var(--font-serif);
+  font-size: 18px;
+  font-weight: 600;
+}
+@media (min-width: 640px) {
+  .session-title {
+    font-size: 20px;
+  }
+}
+
+.session-chair {
+  font-size: 14px;
+  opacity: 0.75;
+}
+
+.schedule-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.schedule-row {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+@media (min-width: 640px) {
+  .schedule-row {
+    flex-direction: row;
+    gap: 24px;
+    align-items: baseline;
+  }
+}
+
+.schedule-time {
+  flex-shrink: 0;
+  width: 120px;
+  font-size: 14px;
+  font-variant-numeric: tabular-nums;
+  opacity: 0.75;
+}
+
+.schedule-details {
+  flex-grow: 1;
+}
+
+.schedule-speaker {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.schedule-affiliation {
+  opacity: 0.75;
+}
+
+.schedule-paper {
+  font-family: var(--font-serif);
+  font-size: 18px;
+  font-style: italic;
+  line-height: 1.4;
+  margin-top: 2px;
+}
+.schedule-paper a {
+  text-decoration: none;
+}
+.schedule-paper a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.schedule-break {
+  padding: 6px 12px;
+  background-color: var(--bg-muted);
+  border-radius: 4px;
+}
+
+.schedule-break .schedule-speaker {
+  font-weight: 500;
+}
+
+.schedule-keynote-label {
+  display: block;
+  margin-top: 2px;
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: var(--text-main);
+  opacity: 0.7;
+}
+
+.keynote-highlight {
+  font-family: var(--font-serif);
+  font-size: 20px;
+  line-height: 1.5;
+  margin-top: 4px;
+  margin-bottom: 10px;
+}
+@media (min-width: 640px) {
+  .keynote-highlight {
+    font-size: 21px;
+  }
+}
